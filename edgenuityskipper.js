@@ -134,6 +134,9 @@ function init() {
       (window.edjskipper = "edgenuity-skipper by wackery"),
       console.log("edgenuity-skipper now active. Version 2"))
     : console.log("already loaded. skipping");
+    document.getElementById("intro-skip").disabled= false;
+    document.getElementById("hint-skip").disabled= false;
+    document.getElementById("exit-skip").disabled= false;
 }
 (window.API = document.querySelector("#stageFrame").contentWindow.API),
   (window.skipperSettings = {}),
